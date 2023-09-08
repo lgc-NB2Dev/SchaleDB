@@ -1,0 +1,4 @@
+version: '1'
+rules:
+  - base: self-dev
+    upstream: lonqie:main
