@@ -25,7 +25,7 @@
         <div id="ba-student" class="col-12 col-md-6 ba-page" style="display:none;">
             <div class="px-0 ps-xl-3">
                 <div class="card p-2">
-                    <div class="card-body">
+                    <div class="card-header">
                         <div class="d-flex flex-row align-items-top pt-2 pb-3">
                             <div class="flex-grow-1 me-2">
                                 <h1 id="ba-student-name" class="title-text px-1 mb-3"></h1>
@@ -38,16 +38,17 @@
                                 <img id="ba-student-school-img" class="invert-light" width="84" height="76" src="">
                             </div>
                         </div>
-
+                        <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
+                            <a id="ba-student-tab-stats" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
+                            <a id="ba-student-tab-skills" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
+                            <a id="ba-student-tab-weapon" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
+                            <a id="ba-student-tab-gear" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
+                            <a id="ba-student-tab-profile" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
+                        </nav>
+                    </div>
+                    <div class="card-body">
                         <div class="tab-content">
-                            <div id="ba-student-page-stats" class="tab-pane fade show active">
-                                <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
-                                    <a id="ba-student-tab-stats" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
-                                    <a id="ba-student-tab-skills" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
-                                    <a id="ba-student-tab-weapon" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
-                                    <a id="ba-student-tab-gear" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
-                                    <a id="ba-student-tab-profile" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
-                                </nav>
+                            <div id="ba-student-page-stats" class="tab-pane fade show active" style="border-radius: .25em;">
                                 <div class="d-flex flex-row flex-wrap align-items-center justify-content-between mb-1 gap-1">
                                     <div id="ba-student-attributes" class="d-flex flex-row flex-wrap align-items-center">
                                         <span id="ba-student-role" class="ba-info-pill bg-theme m-0" style="position: relative;"><img id="ba-student-role-icon" class="invert-light" src="" style="height:26px;"><span id="ba-student-role-label" class="label"></span></span>
@@ -176,14 +177,8 @@
                                 </div>
                             </div>
 
-                            <div id="ba-student-page-skills" class="tab-pane fade show active">
-                                <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
-                                    <a id="ba-student-tab-stats" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
-                                    <a id="ba-student-tab-skills" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
-                                    <a id="ba-student-tab-weapon" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
-                                    <a id="ba-student-tab-gear" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
-                                    <a id="ba-student-tab-profile" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
-                                </nav>
+                            <div id="ba-student-page-skills" class="tab-pane fade" style="border-radius: .25em;">
+
                                 <div class="mb-2 d-flex ">
                                     <button id="skills-show-upgrades" class="btn-pill tooltip-button">
                                         <span class="label">
@@ -304,14 +299,7 @@
                                 </div>
                             </div>
 
-                            <div id="ba-student-page-weapon" class="tab-pane fade show active">
-                                <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
-                                    <a id="ba-student-tab-stats" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
-                                    <a id="ba-student-tab-skills" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
-                                    <a id="ba-student-tab-weapon" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
-                                    <a id="ba-student-tab-gear" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
-                                    <a id="ba-student-tab-profile" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
-                                </nav>
+                            <div id="ba-student-page-weapon" class="tab-pane fade" style="border-radius: .25em;">
                                 <div class="d-flex flex-row align-items-center px-1">
                                     <span class="flex-grow-1">
                                         <h3 id="ba-student-weapon-name" style="display: inline;"></h3>
@@ -399,14 +387,7 @@
                                 </div>
                             </div>
 
-                            <div id="ba-student-page-gear" class="tab-pane fade show active">
-                                <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
-                                    <a id="ba-student-tab-stats" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
-                                    <a id="ba-student-tab-skills" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
-                                    <a id="ba-student-tab-weapon" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
-                                    <a id="ba-student-tab-gear" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
-                                    <a id="ba-student-tab-profile" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
-                                </nav>
+                            <div id="ba-student-page-gear" class="tab-pane fade" style="border-radius: .25em;">
                                 <div class="w-100 px-1">
                                     <h3 id="ba-student-gear-name" class="me-2 d-inline"></h3>
                                     <p class="text-italic mb-2"><span data-localize-id="ui,student_ex_gear"></span></p>
@@ -460,14 +441,7 @@
                                 </div>
                             </div>
 
-                            <div id="ba-student-page-profile" class="tab-pane fade show active">
-                                <nav id="ba-item-list-tabs" class="nav nav-pills justify-content-left">
-                                    <a id="ba-student-tab-stats" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-stats" data-localize-id="ui,attributes"></a>
-                                    <a id="ba-student-tab-skills" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-skills" data-localize-id="ui,skills"></a>
-                                    <a id="ba-student-tab-weapon" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-weapon" data-localize-id="ui,ex_weapon"></a>
-                                    <a id="ba-student-tab-gear" class="nav-link" data-bs-toggle="tab" href="#ba-student-page-gear" data-localize-id="ui,ex_gear"></a>
-                                    <a id="ba-student-tab-profile" class="nav-link active" data-bs-toggle="tab" href="#ba-student-page-profile" data-localize-id="ui,profile"></a>
-                                </nav>
+                            <div id="ba-student-page-profile" class="tab-pane fade" style="border-radius: .25em;">
                                 <div class="d-flex flex-row align-items-top">
                                     <img id="ba-profile-portrait-img" class="drop-shadow me-3">
                                     <div>

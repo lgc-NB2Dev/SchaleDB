@@ -10,6 +10,7 @@
 #ba-student-page-profile {
   padding-bottom: 1rem;
   border-top: 2px solid var(--col-theme-text-t);
+  border-radius: 0px !important;
 }
 
 #ba-student-page-profile {
