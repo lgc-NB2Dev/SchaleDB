@@ -54,6 +54,31 @@
                     <a class="navbar-brand me-4 unselectable" onclick="window.scrollTo(0,0);" translate="no">
                         SCHALE<span class="navbar-accent">.gg</span>
                     </a>
+                    <style>
+                        #deprecate-tip {
+                            position: absolute;
+                            right: 0;
+                            top: 0;
+                            margin: 8px;
+                            padding: 4px 8px;
+                            color: red;
+                            font-size: x-large;
+                            font-weight: 900;
+                            text-align: right;
+                            text-shadow: 2px 2px black;
+                            background-color: aqua;
+                            border-color: red;
+                            border-width: 4px;
+                            border-style: solid;
+                            border-radius: 2px;
+                            z-index: 999;
+                        }
+                    </style>
+                    <div id="deprecate-tip">
+                        此镜像站已被弃用，<br />
+                        <span style="background-color: yellow;">请更新 BAWiki 插件！</span><br />
+                        新版插件支持原站和所有镜像站！
+                    </div>
                     <div class="dropdown ms-auto order-lg-1">
                         <a class="btn btn-dark" href="#" id="ba-navbar-regionselector" role="button" data-bs-toggle="dropdown" data-bs-auto-close="outside" >
                             <i class="fa-solid fa-gear"></i><span class="d-none ms-2">Settings</span>
